@@ -31,4 +31,4 @@ In this lab, you'll get practice creating, accessing, and changing elements in a
 
 
 
-[View this lesson on Learn.co](https://learn.co/lessons/ArrayLab)
+[View this lesson on Learn.co](https://learn.co/lessons/ArrayLab) (error)
