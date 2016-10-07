@@ -13,7 +13,7 @@
  */
 // write your code here
 
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -22,7 +22,7 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,7 +32,8 @@
  */
 // write your code here
 
-
+var futureShoppingList = [String]()
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,6 +43,7 @@
  */
 // write your code here
 
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -51,7 +53,7 @@
  ### 5. Create a second array called 'dessertList' with a type specified using and contains the string values "Cookie dough", "Icecream"
  */
 // write your code here
-
+var dessertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -63,7 +65,7 @@
  */
 // write your code here
 
-
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -75,7 +77,8 @@
  */
 // write your code here
 
-
+var itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
@@ -87,6 +90,8 @@
  */
 // write your code here
 
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 
@@ -99,8 +104,12 @@
  */
 // write your code here
 
-
-
+func lifesEssential (ingredients: [String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    } else { return false
+}
+}
 
 
 
@@ -109,7 +118,7 @@
  */
 // write your code here
 
-
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -120,7 +129,7 @@
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
-
+print(lifesEssential(ingredients: dessertList))
 
 
 
