@@ -14,7 +14,7 @@
 // write your code here
 
 
-
+var list = ["Bread","Butter","cheese", "lettuce", "Tomatoes"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettus", "Tomatoes"]
 
 
 
@@ -32,7 +32,7 @@
  */
 // write your code here
 
-
+var futureShoppingList: [String] = ["Bread", "Buter", "Cheese", "Lettuce", "Tomamoes"]
 
 
 
@@ -42,7 +42,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich: [String] = ["Bread", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,7 +53,7 @@
 // write your code here
 
 
-
+var dessertList: [String] = ["Cookie", "dough", "Icecream"]
 
 
 
@@ -64,7 +64,7 @@
 // write your code here
 
 
-
+var afernoonAttendance: [Int] = [2,10,3,15,7]
 
 
 
@@ -76,7 +76,9 @@
 // write your code here
 
 
+var itemToPrint = shoppingList[1]
 
+print(itemToPrint)
 
 
 
@@ -87,9 +89,9 @@
  */
 // write your code here
 
+futureShoppingList[2] = "Chicken"
 
-
-
+print(futureShoppingList)
 
 
 
@@ -99,9 +101,15 @@
  */
 // write your code here
 
+func lifesEssential(ingredients: [String])-> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    }else {
+        return false
+    }
+}
 
-
-
+lifesEssential(ingredients: ["Bread"])
 
 
 /*: question10
@@ -110,7 +118,7 @@
 // write your code here
 
 
-
+lifesEssential(ingredients: shoppingList)
 
 
 
@@ -120,7 +128,7 @@
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
-
+lifesEssential(ingredients: dessertList)
 
 
 
