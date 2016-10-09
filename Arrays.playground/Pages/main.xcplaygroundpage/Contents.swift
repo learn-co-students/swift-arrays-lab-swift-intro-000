@@ -52,8 +52,11 @@ func lifesEssential(array: [String]) -> Bool {
     if array[0] == "Bread" {
         print("\(array[0]) is here!")
         return true
+    } else {
+        print("There is no Bread in this list!")
+        return false
     }
-    return true
+//    return true
 }
 
 lifesEssential(array: futureShoppingList)
