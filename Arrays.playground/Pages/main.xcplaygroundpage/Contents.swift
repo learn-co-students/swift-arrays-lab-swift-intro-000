@@ -14,7 +14,7 @@
 // write your code here
 
 
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -24,7 +24,7 @@
 // write your code here
 
 
-
+var shoppingList:[String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question3
@@ -33,8 +33,9 @@
 // write your code here
 
 
+var futureShoppingList:[String] = []
 
-
+futureShoppingList.append(contentsOf: ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"])
 
 
 /*: question4
@@ -42,7 +43,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich:[String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,7 +54,7 @@
 // write your code here
 
 
-
+var dessertList:[String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -65,7 +66,7 @@
 
 
 
-
+var afternoonAttendance:[Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -76,9 +77,9 @@
 // write your code here
 
 
+shoppingList[1] = "itemToPrint"
 
-
-
+print(shoppingList[1])
 
 
 
@@ -88,7 +89,8 @@
 // write your code here
 
 
-
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 
@@ -100,7 +102,13 @@
 // write your code here
 
 
-
+func lifesEssential(ingredients: Array<String>) -> Bool {
+    if (ingredients[0] == "Bread") {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 
@@ -110,7 +118,7 @@
 // write your code here
 
 
-
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -121,6 +129,6 @@
  */
 // write your code here
 
-
+print(lifesEssential(ingredients: dessertList))
 
 
