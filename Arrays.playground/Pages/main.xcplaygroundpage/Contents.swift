@@ -14,7 +14,7 @@
 // write your code here
 
 
-
+let list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+let shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,7 +32,8 @@
  */
 // write your code here
 
-
+var futureShoppingList: [String]
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,7 +43,7 @@
  */
 // write your code here
 
-
+let  cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -51,7 +52,7 @@
  ### 5. Create a second array called 'dessertList' with a type specified using and contains the string values "Cookie dough", "Icecream"
  */
 // write your code here
-
+var dessertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -63,6 +64,7 @@
  */
 // write your code here
 
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -75,7 +77,8 @@
  */
 // write your code here
 
-
+var itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
@@ -87,8 +90,12 @@
  */
 // write your code here
 
-
-
+for i in 0..<futureShoppingList.count{
+    if futureShoppingList[i] == "Cheese" {
+        futureShoppingList[i] = "Chicken"
+    }
+}
+print(futureShoppingList)
 
 
 
@@ -98,9 +105,12 @@
  ### 9. Create a function named 'lifesEssential' that accepts a string of arrays as a parameter called 'ingredients' and returns a boolean. Inside the function check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value boolean, if not false.
  */
 // write your code here
-
-
-
+func lifesEssential (ingredients:[String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    }
+    return false
+}
 
 
 
@@ -109,6 +119,7 @@
  */
 // write your code here
 
+lifesEssential(ingredients: shoppingList)
 
 
 
@@ -117,10 +128,11 @@
 
 
 /*: question11
- ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
+ ### 11. Pass the 'dessertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
 
+lifesEssential(ingredients: dessertList)
 
 
 
