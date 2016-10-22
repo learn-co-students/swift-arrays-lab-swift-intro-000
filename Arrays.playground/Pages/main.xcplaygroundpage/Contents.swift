@@ -104,10 +104,10 @@ print(futureShoppingList)
 /*: question9
  ### 9. Create a function named 'lifesEssential' that accepts a string of arrays as a parameter called 'ingredients' and returns a boolean. Inside the function check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value boolean, if not false.
  */
-func lifesEssential(Array: Ingredients) -> Bool {
+func lifesEssential(ingredients: Array<String>) -> Bool {
 
-    {
-    if Ingredients[0] == "Bread"
+    
+    if ingredients[0] == "Bread" {
 
 
 return true
@@ -118,17 +118,14 @@ else {
 return  false
 
 }
-
-
-
+}
 
 
 
 /*: question10
  ### 10. Pass the 'shoppingList' array to the 'lifesEssential' function and print the result.
  */
-// write your code here
-
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -139,7 +136,8 @@ return  false
 /*: question11
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
-// write your code here
+print(lifesEssential(ingredients: dessertList))
+
 
 
 
