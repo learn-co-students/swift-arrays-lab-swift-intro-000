@@ -11,8 +11,8 @@
 /*: question1
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-// write your code here
 
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -24,7 +24,7 @@
 // write your code here
 
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question3
@@ -33,7 +33,12 @@
 // write your code here
 
 
+var futureShoppingList: [String]
 
+// Waiting for family to come home…
+// They're back, let's make a list!
+
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -43,7 +48,7 @@
 // write your code here
 
 
-
+let cheeseSandwish: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,7 +58,7 @@
 // write your code here
 
 
-
+var dessertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -64,7 +69,7 @@
 // write your code here
 
 
-
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -76,7 +81,9 @@
 // write your code here
 
 
+let secondItem = shoppingList[1]
 
+print(secondItem)
 
 
 
@@ -88,9 +95,9 @@
 // write your code here
 
 
+futureShoppingList[2] = "Chicken"
 
-
-
+print(futureShoppingList)
 
 
 
@@ -99,7 +106,16 @@
  */
 // write your code here
 
-
+func lifesEssential(ingredients: String) -> Bool
+{
+    var ingredients: [String] = ["Bread", "Water"]
+    if(ingredients[0] == "Bread")
+    {
+        return true
+    }
+    else {return false}
+    
+}
 
 
 
@@ -110,7 +126,7 @@
 // write your code here
 
 
-
+//lifesEssential(ingredients: shoppingList)
 
 
 
@@ -121,6 +137,6 @@
  */
 // write your code here
 
-
+//fjalk
 
 
