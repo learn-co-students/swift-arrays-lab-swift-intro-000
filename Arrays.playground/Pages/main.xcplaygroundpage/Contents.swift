@@ -12,7 +12,7 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var list = ["Bread", "Butter","Cheese","Lettute", "Tomatoes"]
 
 
 
@@ -22,6 +22,7 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -31,7 +32,9 @@
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var futureShoppingList: [String]
+//Let's now initialize it
+futureShoppingList = ["Bread", "Butter","Cheese","Lettuce","Tomatoes"]
 
 
 
@@ -42,7 +45,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich: [String] = ["Bread","Butter","Cheese","Lettuce","Tomatoes"]
 
 
 
@@ -52,6 +55,7 @@
  */
 // write your code here
 
+var dessertList: [String] = ["Cookie dough","Icecream"]
 
 
 
@@ -63,7 +67,7 @@
  */
 // write your code here
 
-
+var afternoonAttendance: [Int] = [2,10,3,15,7]
 
 
 
@@ -75,6 +79,9 @@
  */
 // write your code here
 
+let itemToPrint = shoppingList[1]
+
+print(itemToPrint)
 
 
 
@@ -87,7 +94,9 @@
  */
 // write your code here
 
+futureShoppingList[2] = "Chicken"
 
+print(futureShoppingList)
 
 
 
@@ -99,7 +108,18 @@
  */
 // write your code here
 
-
+func lifesEssential(array:[String])-> (Bool){
+    if array.isEmpty { return false }
+    var ingredients = array[0]
+   
+    for value in array[0..<array.count] {
+        if value = "Bread" {
+            ingredients = true
+        } else if value != "Bread" {
+            ingredients = false
+        }
+    }
+    return (ingredients)}
 
 
 
@@ -111,7 +131,7 @@
 
 
 
-
+print(shoppingList)
 
 
 
@@ -120,7 +140,7 @@
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
-
+print(dessertList)
 
 
 
