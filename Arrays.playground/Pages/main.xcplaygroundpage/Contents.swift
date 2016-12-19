@@ -13,7 +13,7 @@
  */
 // write your code here
 
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Letuce", "Tomatoes"]
 
 
 
@@ -32,7 +32,7 @@
  */
 // write your code here
 
-
+var futureShoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,7 +42,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -53,7 +53,7 @@
 // write your code here
 
 
-
+let dessertList: [String] = ["Cookie Dough", "Icecream"]
 
 
 
@@ -65,7 +65,7 @@
 
 
 
-
+var afternoonAttendence: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -76,8 +76,8 @@
 // write your code here
 
 
-
-
+let itemToPrint = shoppingList[2]
+print(itemToPrint)
 
 
 
@@ -87,7 +87,8 @@
  */
 // write your code here
 
-
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 
@@ -98,7 +99,13 @@
  ### 9. Create a function named 'lifesEssential' that accepts a string of arrays as a parameter called 'ingredients' and returns a boolean. Inside the function check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value boolean, if not false.
  */
 // write your code here
-
+func lifesEssential(ingredients: [String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 
@@ -109,7 +116,7 @@
  */
 // write your code here
 
-
+lifesEssential(ingredients: shoppingList)
 
 
 
@@ -120,7 +127,7 @@
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
-
+lifesEssential(ingredients: dessertList)
 
 
 
