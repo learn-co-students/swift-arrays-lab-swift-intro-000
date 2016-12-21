@@ -11,7 +11,7 @@
 /*: question1
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-// write your code here
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -21,7 +21,8 @@
 /*: question2
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-// write your code here
+var shoppingList: [String]   = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
+
 
 
 
@@ -30,8 +31,9 @@
 /*: question3
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-// write your code here
+var futureShoppingList: Array<String>
 
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -40,7 +42,7 @@
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose values will never change and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-// write your code here
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -50,7 +52,7 @@
 /*: question5
  ### 5. Create a second array called 'dessertList' with a type specified using and contains the string values "Cookie dough", "Icecream"
  */
-// write your code here
+var dessertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -61,7 +63,7 @@
 /*: question6
  ### 6. Write an array called 'afternoonAttendance' **with** a type specified that contains the integer values 2, 10, 3, 15, 7.
  */
-// write your code here
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -73,7 +75,10 @@
 /*: question7
  ### 7. Assign the value at the second position in the 'shoppingList' array to a variable called 'itemToPrint' and print it to the screen.
  */
-// write your code here
+shoppingList[1] = "itemToPrint"
+print(shoppingList[1])
+
+
 
 
 
