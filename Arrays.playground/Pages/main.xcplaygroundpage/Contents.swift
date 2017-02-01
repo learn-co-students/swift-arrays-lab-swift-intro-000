@@ -87,10 +87,9 @@ print(itemToPrint)
 /*: question8
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the console.
  */
-// write your code here
+futureShoppingList[2] = "Chicken"
 
-
-
+print(futureShoppingList)
 
 
 
@@ -99,9 +98,16 @@ print(itemToPrint)
 /*: question9
  ### 9. Create a function named 'lifesEssential' that accepts an array of strings as a parameter called 'ingredients' and returns a boolean. Inside the function, check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value, if not false.
  */
-// write your code here
+func lifesEssential(ingredients: [String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    } else {
+        return false
+    }
+    
+}
 
-
+lifesEssential(ingredients: ["Bread", "Butter"])
 
 
 
@@ -109,7 +115,8 @@ print(itemToPrint)
 /*: question10
  ### 10. Pass the 'shoppingList' array to the 'lifesEssential' function and print the result (the result being the value which is returned as a result to the call to the lifesEssential function).
  */
-// write your code here
+lifesEssential(ingredients: shoppingList)
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -121,7 +128,7 @@ print(itemToPrint)
 /*: question11
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
-// write your code here
+print(lifesEssential(ingredients: dessertList))
 
 
 
