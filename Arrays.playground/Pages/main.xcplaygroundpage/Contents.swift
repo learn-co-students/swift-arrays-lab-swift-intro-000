@@ -42,7 +42,7 @@ futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose value will never change (constant) and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-// write your code here
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -52,7 +52,7 @@ futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question5
  ### 5. Create a second array called 'dessertList' with a type specified which contains the string values "Cookie dough", "Icecream"
  */
-// write your code here
+var dessertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -62,7 +62,7 @@ futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question6
  ### 6. Write an array called 'afternoonAttendance' **with** a type specified that contains the integer values 2, 10, 3, 15, 7.
  */
-// write your code here
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -74,7 +74,8 @@ futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question7
  ### 7. Assign the value at the second position in the 'shoppingList' array to a variable called 'itemToPrint' and print it to the screen.
  */
-// write your code here
+var itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
