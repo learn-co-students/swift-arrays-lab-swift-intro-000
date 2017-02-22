@@ -12,7 +12,7 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
     // write your code here
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce"]
 
 
 
@@ -22,7 +22,7 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce"]
 
 
 
@@ -32,17 +32,15 @@
  */
 // write your code here
 
+var futureShoppingList: [String] = []
 
-
-
-
-
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose value will never change (constant) and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
-
+let cheeseSandwhich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -52,6 +50,7 @@
  */
 // write your code here
 
+var desertList: Array<String> = ["Cookie Dough", "Icecream"]
 
 
 
@@ -62,7 +61,7 @@
  */
 // write your code here
 
-
+let afternoonAttendance: [Int] = [2 ,10, 3, 15, 7]
 
 
 
@@ -75,6 +74,9 @@
 // write your code here
 
 
+var itemToPrint = shoppingList[1]
+print(itemToPrint)
+
 
 
 
@@ -86,7 +88,9 @@
  */
 // write your code here
 
-
+futureShoppingList.remove(at: 2)
+futureShoppingList.append("Chicken")
+print(futureShoppingList)
 
 
 
@@ -99,6 +103,13 @@
 // write your code here
 
 
+func lifesEssential(ingredients: Array<String>) -> Bool {
+    if ingredients[0] == "Bread"{
+    return true
+    } else {
+        return false
+}
+}
 
 
 
@@ -108,6 +119,7 @@
  */
 // write your code here
 
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -120,7 +132,7 @@
  */
 // write your code here
 
-
+print(lifesEssential(ingredients: desertList))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
