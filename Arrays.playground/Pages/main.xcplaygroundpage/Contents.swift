@@ -13,16 +13,14 @@
  */
     // write your code here
 
-
-
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question2
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,7 +30,9 @@
  */
 // write your code here
 
+var futureShoppingList: [String]
 
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,7 +42,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -52,9 +52,7 @@
  */
 // write your code here
 
-
-
-
+var dessertList: Array<String> = ["Cookie dough", "Icecream"]
 
 
 /*: question6
@@ -62,11 +60,7 @@
  */
 // write your code here
 
-
-
-
-
-
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 /*: question7
@@ -74,11 +68,7 @@
  */
 // write your code here
 
-
-
-
-
-
+var itemToPrint = shoppingList[1]
 
 
 /*: question8
@@ -86,11 +76,8 @@
  */
 // write your code here
 
-
-
-
-
-
+futureShoppingList[2] = "Chicken"
+futureShoppingList
 
 
 /*: question9
@@ -98,9 +85,15 @@
  */
 // write your code here
 
+func lifesEssential(ingredients: Array<Any>) -> Bool {
+    if futureShoppingList[0] == "Bread" {
+        return true
+    } else {
+        return false
+    }
+}
 
-
-
+lifesEssential(ingredients: futureShoppingList)
 
 
 /*: question10
@@ -108,11 +101,7 @@
  */
 // write your code here
 
-
-
-
-
-
+lifesEssential(ingredients: shoppingList)
 
 
 /*: question11
@@ -120,6 +109,7 @@
  */
 // write your code here
 
+lifesEssential(ingredients: dessertList)
 
 
 
