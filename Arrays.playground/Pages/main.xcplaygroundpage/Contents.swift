@@ -12,7 +12,7 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
     // write your code here
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,6 +32,8 @@
  */
 // write your code here
 
+var futureShoppingList: [String]
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,7 +44,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -51,7 +53,7 @@
  ### 5. Create a second array called 'dessertList' with a type specified which contains the string values "Cookie dough", "Icecream"
  */
 // write your code here
-
+var dessertList: [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -62,7 +64,7 @@
  */
 // write your code here
 
-
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -74,7 +76,7 @@
  */
 // write your code here
 
-
+var itemToPrint = shoppingList[1]
 
 
 
@@ -86,7 +88,7 @@
  */
 // write your code here
 
-
+futureShoppingList[2] = "Chicken"
 
 
 
@@ -98,6 +100,15 @@
  */
 // write your code here
 
+func lifesEssential(ingredients: Array<String>) -> Bool {
+    
+    if ingredients[0] == "Bread" {
+        return true
+    } else {
+        return false
+    }
+    
+}
 
 
 
@@ -107,6 +118,10 @@
  ### 10. Pass the 'shoppingList' array to the 'lifesEssential' function and print the result (the result being the value which is returned as a result to the call to the lifesEssential function).
  */
 // write your code here
+
+var result = lifesEssential(ingredients: shoppingList)
+print(result)
+
 
 
 
@@ -120,7 +135,8 @@
  */
 // write your code here
 
-
+result = lifesEssential(ingredients: dessertList)
+print(result)
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
