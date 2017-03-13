@@ -13,7 +13,7 @@
  */
     // write your code here
 
-
+var list = ["bread", "butter"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["a", "b"]
 
 
 
@@ -75,8 +75,7 @@
 // write your code here
 
 
-
-
+shoppingList[1] = "changed"
 
 
 
@@ -100,7 +99,15 @@
 
 
 
-
+func lifesEssentials (ingredients:[String]) -> Bool {
+    
+    if(ingredients[0] == "bread") {
+     return true
+    }
+    
+    return false
+    
+}
 
 
 /*: question10
