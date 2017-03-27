@@ -14,7 +14,7 @@
     // write your code here
 
 
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,7 +32,7 @@
  */
 // write your code here
 
-
+var futureShoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -43,7 +43,7 @@
 // write your code here
 
 
-
+let cheeseSandwich: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -52,7 +52,7 @@
  */
 // write your code here
 
-
+var dessertList: [String] = ["Cookie dough", "Ice Cream"]
 
 
 
@@ -62,7 +62,7 @@
  */
 // write your code here
 
-
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -74,7 +74,9 @@
  */
 // write your code here
 
+var itemToPrint = shoppingList[1]
 
+print(itemToPrint)
 
 
 
@@ -87,7 +89,7 @@
 // write your code here
 
 
-
+futureShoppingList[2] = "Chicken"
 
 
 
@@ -98,8 +100,13 @@
  */
 // write your code here
 
-
-
+func lifesEssentials(ingredients: [String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    } else {
+        return false
+    }
+}
 
 
 
@@ -109,10 +116,9 @@
 // write your code here
 
 
+lifesEssentials(ingredients: shoppingList)
 
-
-
-
+print(lifesEssentials(ingredients: shoppingList))
 
 
 /*: question11
@@ -120,7 +126,9 @@
  */
 // write your code here
 
+lifesEssentials(ingredients: dessertList)
 
+print(lifesEssentials(ingredients: dessertList))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
