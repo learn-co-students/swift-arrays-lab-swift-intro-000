@@ -12,7 +12,13 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
     // write your code here
-
+let list = [
+  "Bread",
+  "Butter",
+  "Cheese",
+  "Lettuce",
+  "Tomatoes"
+]
 
 
 
@@ -22,7 +28,13 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+let shoppingList: [String] = [
+  "Bread",
+  "Butter",
+  "Cheese",
+  "Lettuce",
+  "Tomatoes"
+]
 
 
 
@@ -31,9 +43,13 @@
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
+var futureShoppingList: [String] = []
 
-
-
+futureShoppingList.append("Bread")
+futureShoppingList.append("Butter")
+futureShoppingList.append("Cheese")
+futureShoppingList.append("Lettuce")
+futureShoppingList.append("Tomatoes")
 
 
 
@@ -41,7 +57,13 @@
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose value will never change (constant) and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+let cheeseSandwich: [String] = [
+  "Bread",
+  "Butter",
+  "Cheese",
+  "Lettuce",
+  "Tomatoes"
+]
 
 
 
@@ -52,7 +74,11 @@
  */
 // write your code here
 
-
+let dessertList: [String] = [
+  "Cookie",
+  "dough",
+  "Icecream"
+]
 
 
 
@@ -62,7 +88,7 @@
  */
 // write your code here
 
-
+let afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -75,7 +101,8 @@
 // write your code here
 
 
-
+let itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
@@ -85,8 +112,8 @@
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the console.
  */
 // write your code here
-
-
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 
@@ -97,7 +124,9 @@
  ### 9. Create a function named 'lifesEssential' that accepts an array of strings as a parameter called 'ingredients' and returns a boolean. Inside the function, check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value, if not false.
  */
 // write your code here
-
+func lifesEssential(ingredients: [String]) -> Bool {
+  return ingredients[0] == "Bread"
+}
 
 
 
@@ -108,7 +137,7 @@
  */
 // write your code here
 
-
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -119,7 +148,7 @@
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
-
+print(lifesEssential(ingredients: dessertList))
 
 
 
