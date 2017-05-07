@@ -12,7 +12,7 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
     // write your code here
-
+    var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -22,7 +22,7 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+    var shoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,6 +32,7 @@
  */
 // write your code here
 
+    let futureShoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,7 +43,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich: Array<String> = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -52,7 +53,7 @@
  */
 // write your code here
 
-
+let dessertList = [String]()
 
 
 
@@ -62,7 +63,7 @@
  */
 // write your code here
 
-
+let afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -75,7 +76,8 @@
 // write your code here
 
 
-
+    var itemToPrint = shoppingList[1]
+    print(itemToPrint)
 
 
 
@@ -86,9 +88,8 @@
  */
 // write your code here
 
-
-
-
+//    futureShoppingList[2] = "Chicken"
+    print(futureShoppingList[2])
 
 
 
@@ -97,7 +98,14 @@
  ### 9. Create a function named 'lifesEssential' that accepts an array of strings as a parameter called 'ingredients' and returns a boolean. Inside the function, check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value, if not false.
  */
 // write your code here
-
+func lifesEssential(ingredients: [String]) -> Bool {
+    if !ingredients.isEmpty && ingredients[0].lowercased() == "bread" {
+        return true
+    } else {
+        return false
+    }
+}
+lifesEssential(ingredients: ["bread", "cheese"])
 
 
 
@@ -108,7 +116,7 @@
  */
 // write your code here
 
-
+print(lifesEssential(ingredients: shoppingList))
 
 
 
@@ -120,7 +128,7 @@
  */
 // write your code here
 
-
+lifesEssential(ingredients: dessertList)
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
