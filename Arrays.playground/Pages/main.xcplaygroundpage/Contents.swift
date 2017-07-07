@@ -11,7 +11,7 @@
 /*: question1
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-    // write your code here
+    var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes" ]
 
 
 
@@ -23,7 +23,7 @@
  */
 // write your code here
 
-
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -32,6 +32,8 @@
  */
 // write your code here
 
+var futureShoppingList:[String]
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,7 +44,7 @@
  */
 // write your code here
 
-
+let cheeseSandwich:[String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -51,7 +53,7 @@
  ### 5. Create a second array called 'dessertList' with a type specified which contains the string values "Cookie dough", "Icecream"
  */
 // write your code here
-
+let dessetList:[String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -61,7 +63,7 @@
  ### 6. Write an array called 'afternoonAttendance' **with** a type specified that contains the integer values 2, 10, 3, 15, 7.
  */
 // write your code here
-
+var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -73,8 +75,8 @@
  ### 7. Assign the value at the second position in the 'shoppingList' array to a variable called 'itemToPrint' and print it to the screen.
  */
 // write your code here
-
-
+var itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
@@ -85,7 +87,8 @@
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the console.
  */
 // write your code here
-
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList)
 
 
 
@@ -97,7 +100,12 @@
  ### 9. Create a function named 'lifesEssential' that accepts an array of strings as a parameter called 'ingredients' and returns a boolean. Inside the function, check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value, if not false.
  */
 // write your code here
-
+func lifesEssential (ingredients:Array<String>) -> Bool {
+    if  (ingredients[0] == "Bread"){
+        return true
+    }
+    else { return false}
+}
 
 
 
@@ -108,7 +116,7 @@
  */
 // write your code here
 
-
+print(lifesEssential (ingredients: shoppingList))
 
 
 
@@ -120,7 +128,7 @@
  */
 // write your code here
 
-
+print(lifesEssential (ingredients: dessetList))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
