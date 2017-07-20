@@ -12,7 +12,7 @@
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
     // write your code here
-
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -23,6 +23,8 @@
  */
 // write your code here
 
+var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
+
 
 
 
@@ -31,6 +33,8 @@
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
+
+var futureShoppingList : [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -42,6 +46,8 @@
  */
 // write your code here
 
+var cheeseSandwich : [String] = [ "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
+
 
 
 
@@ -52,7 +58,7 @@
  */
 // write your code here
 
-
+var dessertList : [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -62,6 +68,7 @@
  */
 // write your code here
 
+var afternoonAttendance : [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -74,7 +81,7 @@
  */
 // write your code here
 
-
+var itemToPrint = shoppingList[1]
 
 
 
@@ -85,6 +92,9 @@
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the console.
  */
 // write your code here
+
+futureShoppingList[2] = "Chicken"
+
 
 
 
@@ -98,6 +108,14 @@
  */
 // write your code here
 
+func lifesEssential(ingredients : [String]) -> Bool {
+    if ingredients[0] == "Bread" {
+        return true
+    } else {
+        return false
+    }
+}
+
 
 
 
@@ -107,7 +125,7 @@
  ### 10. Pass the 'shoppingList' array to the 'lifesEssential' function and print the result (the result being the value which is returned as a result to the call to the lifesEssential function).
  */
 // write your code here
-
+lifesEssential(ingredients: shoppingList)
 
 
 
@@ -120,7 +138,7 @@
  */
 // write your code here
 
-
+lifesEssential(ingredients: dessertList)
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
