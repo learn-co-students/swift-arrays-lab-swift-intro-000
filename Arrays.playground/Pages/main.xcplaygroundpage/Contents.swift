@@ -13,7 +13,7 @@
  */
     // write your code here
 
-
+    var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -22,7 +22,7 @@
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var shoppingList : [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -31,7 +31,8 @@
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
-
+var futureShoppingList : [String]
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 
@@ -44,7 +45,7 @@
 
 
 
-
+let cheeseSandwich : [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
 
 /*: question5
@@ -52,7 +53,7 @@
  */
 // write your code here
 
-
+var dessertList : [String] = ["Cookie dough", "Icecream"]
 
 
 
@@ -63,7 +64,7 @@
 // write your code here
 
 
-
+var afternoonAttendance : [Int] = [2, 10, 3, 15, 7]
 
 
 
@@ -74,7 +75,8 @@
  */
 // write your code here
 
-
+let itemToPrint = shoppingList[1]
+print(itemToPrint)
 
 
 
@@ -87,7 +89,8 @@
 // write your code here
 
 
-
+futureShoppingList[2] = "Chicken"
+print(futureShoppingList[2])
 
 
 
@@ -97,7 +100,10 @@
  ### 9. Create a function named 'lifesEssential' that accepts an array of strings as a parameter called 'ingredients' and returns a boolean. Inside the function, check to see if the array passed to the function contains the value "Bread" at position 0. If it does, return a true value, if not false.
  */
 // write your code here
-
+func lifesEssential(_ ingredients:[String]) -> Bool{
+    let chk = ingredients[0]=="Bread"
+    return chk
+}
 
 
 
@@ -109,7 +115,7 @@
 // write your code here
 
 
-
+print(lifesEssential(shoppingList))
 
 
 
@@ -120,7 +126,7 @@
  */
 // write your code here
 
-
+print(lifesEssential(dessertList))
 
 
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
