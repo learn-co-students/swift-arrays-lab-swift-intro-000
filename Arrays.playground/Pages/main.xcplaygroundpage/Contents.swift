@@ -62,7 +62,7 @@
  */
 // write your code here
 
-
+var afternoonAttendance : [Int] = [2,10,3,15,7]
 
 
 
@@ -98,7 +98,9 @@
  */
 // write your code here
 
-
+func lifesEssential(ingredients: [String]) ->Bool {
+    return ingredients[0] == "Bread"
+}
 
 
 
