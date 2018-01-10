@@ -53,7 +53,7 @@ let cheeseSandwich: [String] = ["Bread","Butter","Cheese","Lettuce","Tomatoes"]
  */
 // write your code here
 
-var dessertList: [String] = ["Cookie dough","Icecream"]
+var desertList: [String] = ["Cookie dough","Icecream"]
 
 
 
@@ -96,18 +96,15 @@ print(futureShoppingList)
  */
 // write your code here
 
-let ingredients = ["Bread", "Cheese", "Butter"]
+var ingredients = ["Bread", "Cheese", "Butter"]
 
 func lifesEssential(a: [String]) -> Bool {
-    if ingredients.contains("Bread") {
+    if ingredients[0] == "Bread" {
     return true
 } else {
     return false
 }
 }
-
-lifesEssential(a:ingredients)
-
 
 
 /*: question10
@@ -116,6 +113,7 @@ lifesEssential(a:ingredients)
 // write your code here
 
 
+print(lifesEssential(a: shoppingList))
 
 
 
@@ -126,6 +124,8 @@ lifesEssential(a:ingredients)
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
+
+print(lifesEssential(a:desertList))
 
 
 
