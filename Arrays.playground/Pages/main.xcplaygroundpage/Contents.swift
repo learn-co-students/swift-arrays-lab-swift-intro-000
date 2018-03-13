@@ -28,11 +28,13 @@ var shoppingList: [String] = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"
  */
 // write your code here
 var futureShoppingList:[String] = []
-futureShoppingList.append("Bread")
-futureShoppingList.append("Butter")
-futureShoppingList.append("Cheese")
-futureShoppingList.append("Lettuce")
-futureShoppingList.append("Tomatoes")
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
+//or
+//futureShoppingList.append("Bread")
+//futureShoppingList.append("Butter")
+//futureShoppingList.append("Cheese")
+//futureShoppingList.append("Lettuce")
+//futureShoppingList.append("Tomatoes")
 
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose value will never change (constant) and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
@@ -61,7 +63,7 @@ var afternoonAttendance: [Int] = [2, 10, 3, 15, 7]
 // write your code here
 
 var itemToPrint: String = shoppingList[1]
-
+print (itemToPrint)
 /*: question8
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the console.
  */
@@ -85,7 +87,7 @@ print (futureShoppingList)
 
 func lifesEssential (ingredients: [String]) -> Bool
 {
-    return ingredients.contains("Bread")
+    return ingredients[0] == "Bread"
 }
 
 let answer = lifesEssential(ingredients: ["Bread"])
