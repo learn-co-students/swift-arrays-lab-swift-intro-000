@@ -11,7 +11,7 @@
 /*: question1
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-    // write your code here
+var list: [string] = 
 
 
 
