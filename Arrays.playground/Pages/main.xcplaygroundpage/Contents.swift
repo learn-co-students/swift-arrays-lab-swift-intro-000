@@ -11,9 +11,9 @@
 /*: question1
  ### 1. Write an array called 'list' **without** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
-    var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
+var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 
-    print(list[2])
+print(list[2])
 /*: question2
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
