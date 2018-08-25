@@ -13,81 +13,55 @@
  */
     // write your code here
 
-
-
-
-
-
+    var list = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question2
  ### 2. Write an array called 'shoppingList' **with** a type specified that contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
-
-
-
-
+var shoppingList: Array<String> = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question3
  ### 3. Initialize an array called 'futureShoppingList' **with** a type specified and then add the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
+var futureShoppingList: [String]
 
-
-
-
-
+futureShoppingList = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question4
  ### 4. Write an array called 'cheeseSandwich' **with** a type specified whose value will never change (constant) and contains the string values "Bread", "Butter", "Cheese", "Lettuce", "Tomatoes".
  */
 // write your code here
 
-
-
-
-
-
+let cheeseSandwich: Array<String> = ["Bread", "Butter", "Cheese", "Lettuce", "Tomatoes"]
 /*: question5
  ### 5. Create a second array called 'dessertList' with a type specified which contains the string values "Cookie dough", "Icecream"
  */
 // write your code here
 
-
-
-
-
-
+var desserList: Array<String> = ["Cookie dough", "Icecream"]
 /*: question6
  ### 6. Write an array called 'afternoonAttendance' **with** a type specified that contains the integer values 2, 10, 3, 15, 7.
  */
 // write your code here
 
-
-
-
-
-
-
-
+let afternoonAttendance: Array<Int> = [2, 10, 3, 15,7]
 /*: question7
  ### 7. Assign the value at the second position in the 'shoppingList' array to a variable called 'itemToPrint' and print it to the screen.
  */
 // write your code here
 
+var itemToPrint = shoppingList[2]
 
-
-
-
-
-
-
+print(itemToPrint)
 /*: question8
  ### 8. Change the value of 'Cheese' in the 'futureShoppingList' array to 'Chicken' and then print the array to the console.
  */
 // write your code here
 
+futureShoppingList[2] = "Chicken"
 
-
+print(futureShoppingList)
 
 
 
@@ -98,9 +72,13 @@
  */
 // write your code here
 
+func lifeEssential(ingredients : Array<String>) -> Bool{
+    return ingredients.contains("Bread")
+}
 
-
-
+// I dont know how to run the contains for the element and spicific index. Couldn't find anything online. I guess I could do an if statement something like
+// if ingredients[0] == "Bread" {return true} but seems like there is a better way. Also is this something that is regularly done? I thought typically you never
+// want to lock anything down to an arrays specific index?
 
 
 /*: question10
@@ -108,21 +86,14 @@
  */
 // write your code here
 
-
-
-
-
-
-
+print(lifeEssential(ingredients: shoppingList))
 
 /*: question11
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
 
-
-
-
+print(lifeEssential(ingredients: desserList))
 //: Click [here](https://github.com/learn-co-curriculum/swift-arrays-lab/blob/solution/Arrays.playground/Pages/solution.xcplaygroundpage/Contents.swift) for the solution.
 
 
