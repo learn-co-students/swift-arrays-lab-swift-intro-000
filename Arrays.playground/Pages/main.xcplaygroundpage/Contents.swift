@@ -112,8 +112,7 @@ func lifesEssential(ingredient: [String]) -> Bool {
  ### 10. Pass the 'shoppingList' array to the 'lifesEssential' function and print the result (the result being the value which is returned as a result to the call to the lifesEssential function).
  */
 // write your code here
-var resultToPrint = String(lifesEssential(ingredient: shoppingList))
-print(resultToPrint)
+print(lifesEssential(ingredient: shoppingList))
 
 
 
@@ -125,8 +124,7 @@ print(resultToPrint)
  ### 11. Pass the 'desertList' array to the 'lifesEssential' function and print the result.
  */
 // write your code here
-resultToPrint = String(lifesEssential(ingredient: dessertList))
-print(resultToPrint)
+print(lifesEssential(ingredient: dessertList))
 
 
 
